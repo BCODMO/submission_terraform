@@ -3,7 +3,7 @@ variable "region" {
 }
 
 variable "aws_endpoint" {
-default = "s3.amazonaws.com"
+  default = "s3.amazonaws.com"
 }
 variable "aws_access_key" {}
 variable "aws_secret_access_key" {}
@@ -19,19 +19,19 @@ variable "id_generator_url" {}
 variable "id_generator_api_key" {}
 
 variable "auth_url" {
-    default = "https://orcid.org/oauth/authorize"
+  default = "https://orcid.org/oauth/authorize"
 }
 variable "auth_force_logout_url" {
-    default = "https://orcid.org/userStatus.json?logUserOut=true"
+  default = "https://orcid.org/userStatus.json?logUserOut=true"
 }
 variable "auth_token_url" {
-    default = "https://orcid.org/oauth/token"
+  default = "https://orcid.org/oauth/token"
 }
 variable "auth_client_id" {}
 variable "auth_client_secret" {}
 
 variable "orcid_api_url" {
-    default = "https://pub.orcid.org/v3.0"
+  default = "https://pub.orcid.org/v3.0"
 }
 
 

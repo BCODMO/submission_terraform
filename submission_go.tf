@@ -65,7 +65,7 @@ resource "aws_ecs_task_definition" "submission_go" {
             },
             {
                 "name": "OFFLINE_DEVELOPMENT",
-                "value": "true"
+                "value": "false"
             },
             {
                 "name": "SUBMISSION_VALIDATION_URL",

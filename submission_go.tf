@@ -64,6 +64,12 @@ resource "aws_ecs_task_definition" "submission_go" {
                 "value": "${aws_s3_bucket.submissions_permissions.bucket}"
             },
             {
+
+                "name": "LOD_ROLES_URI",
+                "value": "${var.lod_roles_uri}"
+
+            },
+            {
                 "name": "OFFLINE_DEVELOPMENT",
                 "value": "false"
             },
@@ -110,6 +116,10 @@ resource "aws_ecs_task_definition" "submission_go" {
             {
                 "name": "ORCID_API_URL",
                 "value": "${var.orcid_api_url}"
+            },
+            {
+                "name": "ORCID_SAFELIST",
+                "value": "${var.orcid_safelist}"
             },
             {
                 "name": "PORT",

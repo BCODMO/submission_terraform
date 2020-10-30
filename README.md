@@ -17,3 +17,12 @@ You will need to import the https certificate. For example:
 ```
 terraform import aws_acm_certificate.cert arn:aws:acm:us-east-1:504672911985:certificate/7d76e817-d2dc-44e6-902c-d9cb8898e6f2
 ```
+
+Safelist Orcids:
+```
+0000-0003-3781-4641 - Dana
+0000-0001-9414-722X - Conrad
+0000-0002-5133-5842 - Amber
+0000-0002-5133-5842 - Shannon
+
+```

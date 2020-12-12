@@ -40,3 +40,14 @@ variable "submission_version" {}
 variable "lod_roles_uri" {}
 
 variable "orcid_safelist" {}
+
+variable "redmine_api_url" {}
+variable "redmine_api_access_key" {}
+variable "redmine_project_id" {}
+variable "redmine_category_id_project" {}
+variable "redmine_category_id_dataset" {}
+variable "redmine_custom_field_id_submission_tool_id" {}
+variable "redmine_custom_field_id_submission_state" {}
+variable "redmine_status_id" {}
+variable "redmine_tracker_id" {}
+

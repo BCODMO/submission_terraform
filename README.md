@@ -1,4 +1,4 @@
-# laminar_terraform
+# submission_terraform
 Terraform scripts for submission architecture
 
 To update the ECR docker containers, see the deploy.sh scripts in bcodmo_submission repo 
@@ -25,5 +25,7 @@ Safelist Orcids:
 0000-0002-5133-5842 - Amber
 0000-0002-5133-5842 - Shannon
 0000-0002-1134-7347 - Danie
+0000-0003-1473-8789 - Nancy
+0000-0002-4602-3537 - Karen
 
 ```

@@ -28,7 +28,7 @@ resource "aws_s3_bucket" "projects" {
     allowed_headers = ["*"]
     allowed_methods = ["GET", "PUT"]
     allowed_origins = ["*"]
-    expose_headers = ["ETag"]
+    expose_headers  = ["ETag"]
     max_age_seconds = 3000
   }
 }
@@ -40,7 +40,7 @@ resource "aws_s3_bucket" "submissions" {
     allowed_headers = ["*"]
     allowed_methods = ["GET", "PUT"]
     allowed_origins = ["*"]
-    expose_headers = ["ETag"]
+    expose_headers  = ["ETag"]
     max_age_seconds = 3000
   }
 }

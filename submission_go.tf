@@ -121,6 +121,16 @@ resource "aws_ecs_task_definition" "submission_go" {
                 "name": "ORCID_SAFELIST",
                 "value": "${var.orcid_safelist}"
             },
+            { "name": "REDMINE_API_URL", "value": "${var.redmine_api_url}" },
+            { "name": "REDMINE_API_ACCESS_KEY", "value": "${var.redmine_api_access_key}" },
+            { "name": "REDMINE_PROJECT_ID", "value": "${var.redmine_project_id}" },
+            { "name": "REDMINE_CATEGORY_ID_PROJECT", "value": "${var.redmine_category_id_project}" },
+            { "name": "REDMINE_CATEGORY_ID_DATASET", "value": "${var.redmine_category_id_dataset}" },
+            { "name": "REDMINE_CUSTOM_FIELD_ID_SUBMISSION_TOOL_ID", "value": "${var.redmine_custom_field_id_submission_tool_id}" },
+            { "name": "REDMINE_CUSTOM_FIELD_ID_SUBMISSION_STATE", "value": "${var.redmine_custom_field_id_submission_state}" },
+            { "name": "REDMINE_STATUS_ID", "value": "${var.redmine_status_id}" },
+            { "name": "REDMINE_TRACKER_ID", "value": "${var.redmine_tracker_id}" },
+
             {
                 "name": "PORT",
                 "value": "8080"

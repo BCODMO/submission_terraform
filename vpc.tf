@@ -8,6 +8,7 @@ resource "aws_default_subnet" "default_1b" {
   availability_zone = "us-east-1b"
 }
 
+
 resource "aws_security_group" "submission" {
   name        = "submission-ecs-${terraform.workspace}"
   description = "Created by Terraform"
@@ -39,7 +40,5 @@ resource "aws_security_group" "submission" {
     ignore_changes = [ingress]
   }
 }
-
-
 
 

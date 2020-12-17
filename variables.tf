@@ -51,3 +51,4 @@ variable "redmine_custom_field_id_submission_state" {}
 variable "redmine_status_id" {}
 variable "redmine_tracker_id" {}
 
+variable "submission_github_issue_uri" {}

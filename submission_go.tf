@@ -130,7 +130,10 @@ resource "aws_ecs_task_definition" "submission_go" {
             { "name": "REDMINE_CUSTOM_FIELD_ID_SUBMISSION_STATE", "value": "${var.redmine_custom_field_id_submission_state}" },
             { "name": "REDMINE_STATUS_ID", "value": "${var.redmine_status_id}" },
             { "name": "REDMINE_TRACKER_ID", "value": "${var.redmine_tracker_id}" },
-
+            {
+                "name": "SUBMISSION_GITHUB_ISSUE_URI",
+                "value": "${var.submission_github_issue_uri}"
+            },
             {
                 "name": "PORT",
                 "value": "8080"

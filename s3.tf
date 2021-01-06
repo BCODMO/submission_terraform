@@ -24,6 +24,9 @@
 resource "aws_s3_bucket" "projects" {
   bucket = "bcodmo-projects"
   acl    = "private"
+  versioning {
+    enabled = true
+  }
   cors_rule {
     allowed_headers = ["*"]
     allowed_methods = ["GET", "PUT"]
@@ -36,6 +39,9 @@ resource "aws_s3_bucket" "projects" {
 resource "aws_s3_bucket" "submissions" {
   bucket = "bcodmo-submissions"
   acl    = "private"
+  versioning {
+    enabled = true
+  }
   cors_rule {
     allowed_headers = ["*"]
     allowed_methods = ["GET", "PUT"]

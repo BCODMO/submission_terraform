@@ -70,6 +70,12 @@ resource "aws_ecs_task_definition" "submission_go" {
 
             },
             {
+
+                "name": "LOD_PROGRAMS_URI",
+                "value": "${var.lod_programs_uri}"
+
+            },
+            {
                 "name": "OFFLINE_DEVELOPMENT",
                 "value": "false"
             },

@@ -38,6 +38,7 @@ variable "orcid_api_url" {
 variable "submission_version" {}
 
 variable "lod_roles_uri" {}
+variable "lod_programs_uri" {}
 
 variable "orcid_safelist" {}
 

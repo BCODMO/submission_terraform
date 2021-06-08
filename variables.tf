@@ -37,7 +37,8 @@ variable "orcid_api_url" {
 
 variable "submission_version" {}
 
-variable "lod_roles_uri" {}
+variable "lod_dataset_roles_uri" {}
+variable "lod_project_roles_uri" {}
 variable "lod_programs_uri" {}
 
 variable "orcid_safelist" {}
@@ -53,3 +54,10 @@ variable "redmine_status_id" {}
 variable "redmine_tracker_id" {}
 
 variable "submission_github_issue_uri" {}
+
+
+variable "email_from" {}
+variable "email_password" {}
+variable "email_host" {}
+variable "email_port" {}
+variable "email_to" {}

@@ -65,8 +65,14 @@ resource "aws_ecs_task_definition" "submission_go" {
             },
             {
 
-                "name": "LOD_ROLES_URI",
-                "value": "${var.lod_roles_uri}"
+                "name": "LOD_DATASET_ROLES_URI",
+                "value": "${var.lod_dataset_roles_uri}"
+
+            },
+            {
+
+                "name": "LOD_PROJECT_ROLES_URI",
+                "value": "${var.lod_project_roles_uri}"
 
             },
             {
@@ -102,6 +108,26 @@ resource "aws_ecs_task_definition" "submission_go" {
             {
                 "name": "AUTH_FORCE_LOGOUT_URL",
                 "value": "${var.auth_force_logout_url}"
+            },
+            {
+                "name": "EMAIL_FROM",
+                "value": "${var.email_from}"
+            },
+            {
+                "name": "EMAIL_PASSWORD",
+                "value": "${var.email_password}"
+            },
+            {
+                "name": "EMAIL_HOST",
+                "value": "${var.email_host}"
+            },
+            {
+                "name": "EMAIL_PORT",
+                "value": "${var.email_port}"
+            },
+            {
+                "name": "EMAIL_TO",
+                "value": "${var.email_to}"
             },
             {
                 "name": "AUTH_URL",

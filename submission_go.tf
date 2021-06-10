@@ -36,6 +36,10 @@ resource "aws_ecs_task_definition" "submission_go" {
         },
         "environment": [
             {
+                "name": "VERSION",
+                "value": "${var.submission_version}"
+            },
+            {
                 "name": "MINIO_ENDPOINT",
                 "value": "${var.aws_endpoint}"
             },
